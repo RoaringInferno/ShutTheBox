@@ -4,10 +4,9 @@
 
 class d6
 {
-private:
+public:
     typedef unsigned char result_t;
 private:
-    std::random_device rd;
     std::mt19937 gen;
     std::uniform_int_distribution<result_t> dis;
 public:

@@ -14,7 +14,7 @@ class ShutTheBox
      * The boolean's value is true if the tile is flipped (unavailable), and false if it is not (can still be flipped).
      * The tiles are indexed from 0-8, but are displayed to the player from 1-9.
      */
-private: // Typedefs
+public: // Typedefs
     typedef unsigned char tile_index_t; // Represents the index of a tile.
     typedef unsigned char score_t; // Represents the score of the player
     typedef unsigned char dice_roll_t; // Represents the result of a dice roll
