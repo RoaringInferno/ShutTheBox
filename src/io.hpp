@@ -11,6 +11,7 @@ public:
     ~IO();
 
     void print(const std::string& message); // Print a message to the console
+    void push(const std::string& message); // Push a message to the output buffer
     void clear(); // Clear the output buffer
     void flush(); // Flush the output buffer
 
