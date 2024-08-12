@@ -2,6 +2,15 @@
 
 #include <iostream>
 
+IO::IO() :
+    output_buffer()
+{
+}
+
+IO::~IO()
+{
+}
+
 void IO::print(const std::string &message)
 {
     std::cout << message;

@@ -1,6 +1,7 @@
-#include <iostream>
+#include "shutthebox.hpp"
 
 int main(int argc, char** argv) {
-    std::cout << "Hello, World!" << std::endl;
+    ShutTheBox game;
+    game.play();
     return 0;
 }

@@ -129,6 +129,7 @@ ShutTheBox::dice_roll_t ShutTheBox::roll_dice()
 ShutTheBox::ShutTheBox() :
     tiles(0), // All tiles are initially available (false)
     dice(),
+    io(),
     score(MAX_SCORE) // The initial score is the sum of all the tiles
 {
 }
@@ -139,9 +140,8 @@ ShutTheBox::~ShutTheBox()
 
 void ShutTheBox::play()
 {
+    io.clear_console(); // Clear the console
     while(true) {
-        io.clear_console(); // Clear the console
-
         // Roll the dice
         dice_roll_t roll1 = roll_dice();
         dice_roll_t roll2 = roll_dice();
